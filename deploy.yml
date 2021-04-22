@@ -5,13 +5,13 @@ services:
   akash:
     image: tombeynon/akash-archive-node:v0.0.6
     env:
-      - AKASH_MONIKER=my-node-name
+      - AKASH_MONIKER=skynet
       #- AKASH_PRUNING=nothing
       #- AKASH_MINIMUM_GAS_PRICES=0.025uakt
       #- AKASH_NETWORK=mainnet
       #- AKASH_SEEDS=http://127.0.0.1,http://8.8.8,8
       #- BOOTSTRAP=1
-      #- SNAPSHOT_URL=http://135.181.60.250/akash/akashnet-2_2021-04-15.tar
+      #- SNAPSHOT_URL=http://rpc01-skynet.paullovette.com/akash/akashnet-2_2021-04-21.tar
       #- AKASH_RPC_LADDR=tcp://0.0.0.0:26657
       #- AKASH_FASTSYNC_VERSION=v2
       #- AKASH_STATESYNC_ENABLED=true
@@ -43,7 +43,7 @@ profiles:
         memory:
           size: 2Gi
         storage:
-          size: 32Gi
+          size: 128Gi
   placement:
     dcloud:
       attributes:
@@ -54,7 +54,7 @@ profiles:
       pricing:
         akash:
           denom: uakt
-          amount: 10
+          amount: 5000
 
 deployment:
   akash:

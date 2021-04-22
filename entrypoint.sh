@@ -25,7 +25,7 @@ then
   mkdir -p ~/.akash/data;
   cd ~/.akash/data
   if [[ -z "${SNAPSHOT_URL}" ]]; then
-    SNAPSHOT_URL=http://135.181.60.250/akash/$(curl -s http://135.181.60.250/akash/ | egrep -o ">akashnet-2.*tar" | tr -d ">");
+    SNAPSHOT_URL=http://rpc01-skynet.paullovette.com/akash/$(curl -s http://rpc01-skynet.paullovette.com/akash/ | egrep -o ">akashnet-2.*tar" | tr -d ">");
   fi
 
   echo "Downloading snapshot from $SNAPSHOT_URL..."

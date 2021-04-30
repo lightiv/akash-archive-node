@@ -11,7 +11,7 @@ services:
       #- AKASH_NETWORK=mainnet
       #- AKASH_SEEDS=http://127.0.0.1,http://8.8.8,8
       #- BOOTSTRAP=1
-      #- SNAPSHOT_URL=http://rpc01-skynet.paullovette.com/akash/akashnet-2_2021-04-21.tar
+      #- SNAPSHOT_URL=http://rpc01-skynet.paullovette.com/akash/akashnet-2_2021-04-29.tar
       #- AKASH_RPC_LADDR=tcp://0.0.0.0:26657
       #- AKASH_FASTSYNC_VERSION=v2
       #- AKASH_STATESYNC_ENABLED=true
